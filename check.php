@@ -7,7 +7,7 @@ echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
 ?>
 
 <?php
-$username = "haproxy_check";
+$username = "check";
 $password = "check";
 $hostname = "ipr-lbapp-chi51.visionps.com"; 
 
