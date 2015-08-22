@@ -2,12 +2,11 @@
 <h1>Server Info</h1>
 <pre>
 <?php
-echo "Server IP: ".$_SERVER['SERVER_ADDR'];
+echo "Server IP: ".$_SERVER['SERVER_ADDR'] . " (". $_SERVER['HTTP_HOST'] .")";
 echo "\nClient IP: ".$_SERVER['REMOTE_ADDR'];
 echo "\nDocument Root: ".$_SERVER['DOCUMENT_ROOT'];
 echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
 
-echo "\nServer Dump: ".var_dump($_SERVER);
 ?>
 </pre>
 
