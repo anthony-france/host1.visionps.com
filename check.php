@@ -6,6 +6,8 @@ echo "Server IP: ".$_SERVER['SERVER_ADDR'];
 echo "\nClient IP: ".$_SERVER['REMOTE_ADDR'];
 echo "\nDocument Root: ".$_SERVER['DOCUMENT_ROOT'];
 echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
+
+echo "\nServer Dump: ".var_dump($_SERVER);
 ?>
 </pre>
 
@@ -33,7 +35,7 @@ echo "Connected to $hostname<br>";
 <?php
 //execute the SQL query and return records
 $result = mysql_query("SELECT @@hostname");
-var_dump($result);
+
 //fetch tha data from the database
 while ($row = mysql_fetch_array($result)) {
    echo "sql server hostname:".$row{'@@hostname'};
