@@ -10,21 +10,24 @@ echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
 </pre>
 
 <h1>mysql check</h1>
-<?php
-$username = "check";
-$password = "check";
-$hostname = "ipr-lbapp-chi51.visionps.com"; 
-
 <pre>
 <?php
-	echo "Username: $username";
-	echo "Password: $password";
-	echo "Hostname: $hostname";
+    $username = "check";
+    $password = "check";
+    $hostname = "ipr-lbapp-chi51.visionps.com"; 
+	
+	echo "Username: " . $username;
+	echo "Password: " . $password;
+	echo "Hostname: " . $hostname;
 ?>
 
+
+<?php
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
    or die("Unable to connect to $hostname");
   
 echo "Connected to $hostname<br>";
 ?>
+
+</pre>
