@@ -17,8 +17,8 @@ echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
     $hostname = "ipr-lbapp-chi51.visionps.com"; 
 	
 	echo "Username: " . $username;
-	echo "Password: " . $password;
-	echo "Hostname: " . $hostname;
+	echo "\nPassword: " . $password;
+	echo "\nHostname: " . $hostname;
 ?>
 
 
