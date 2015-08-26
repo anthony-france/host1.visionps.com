@@ -44,7 +44,7 @@ while ($row = mysql_fetch_array($result)) {
 <h1>mysql check 02</h1>
 <pre>
 <?php
-    $username = "haproxy_check";
+    $username = "check";
     $password = "check";
     $hostname = "ipr-lbapp-chi52.visionps.com"; 
 	
