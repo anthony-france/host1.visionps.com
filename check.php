@@ -26,7 +26,7 @@ echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
 <?php
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
-   or die "Unable to connect to $hostname";
+   or die ("Unable to connect to $hostname");
   
 echo "Connected to $hostname<br>";
 ?>
