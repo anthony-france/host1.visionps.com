@@ -43,3 +43,5 @@ while ($row = mysql_fetch_array($result)) {
 
 
 </pre>
+
+<?php echo phpinfo(); ?>
