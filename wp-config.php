@@ -79,7 +79,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
-define('FORCE_SSL_ADMIN', true);
+define('FORCE_SSL_ADMIN', false);
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
        $_SERVER['HTTPS']='on';
 
