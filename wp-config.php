@@ -29,7 +29,7 @@ define('DB_USER', 'iprstageusr');
 define('DB_PASSWORD', 'dsDLlkdldD98eieowD9wslsdl*dl2298');
 
 /** MySQL hostname */
-define('DB_HOST', 'sql.staging.visionps.net');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
